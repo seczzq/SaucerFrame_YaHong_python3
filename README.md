@@ -1,6 +1,5 @@
 # Saucerframe
-[![PyPI version](https://img.shields.io/badge/python-3-blue.svg)](https://www.python.org/)  [![License](https://img.shields.io/badge/license-GPLv2-red.svg)](https://raw.githubusercontent.com/sqlmapproject/sqlmap/master/LICENSE) 
-
+本框架出自于巨人之手，希望大家给与支持，像大佬致敬！
 saucerframe是一个基于python3的开源批量POC检测框架，默认使用协程异步请求，支持多线程并发，支持多种指定目标方式，可用于批量POC检测，也可根据需要扩展功能。欢迎star和fork。
 
 **本项目用来交流学习，切勿用来做违法之事**
@@ -19,28 +18,7 @@ saucerframe是一个基于python3的开源批量POC检测框架，默认使用�
 (利用Zoomeye批量扫描thinkphp5远程代码执行漏洞主机)
 
 # 更新历史
-<details>
-<summary>点击查看/关闭</summary>
 
-- 2019-05-09
-增加logging模块，支持输出等级；增加censys api调用；IPY替换为内置库ipaddress、imp更新为importlib模块；规范大部分函数、变量命名；修改了程序逻辑。
-
-- 2019-05-08
-增加plugin目录，逐步添加plugin，方便poc调用。目前已添加随机user-agent
-
-- 2019-04-18
-更改默认并发方式为协程，自动根据扫描数量确定异步请求数量，优化了部分代码逻辑，速度提升
-
-- 2019-02-26
-增加协程模式，利用gevent模块实现异步请求。
-
-- 2018-12-15 
-将第三方库colorama、IPy放进thirdlib中直接引用，减少依赖包的安装。
-
-- 2018-12-10 
-测试框架编写完成
-
-</details>
 
 
 # 使用
@@ -118,11 +96,4 @@ Output:
   -v LOGGING_LEVEL      logging level, default INFO,(eg -v 1) to output more
 ```
 
-# POC编写
-
-介绍已移至[wiki](https://github.com/saucer-man/saucerframe/wiki)
-
-# 感谢
-
-框架设计过程中借鉴了[POC-T](https://github.com/Xyntax/POC-T)和[sqlmap](https://github.com/sqlmapproject/sqlmap)等优秀开源项目的部分模式和代码，特此说明和感谢。
 
